@@ -18,7 +18,7 @@ jobs:
         # Configurar Surge.sh
         npm install --global surge
         
-        SURGE_TOKEN ${{ secrets.SURGE_TOKEN }} 
+        surge token ${{ secrets.SURGE_TOKEN }} 
 
         # Desplegar en Surge.sh
         surge --project ./ --domain naughty-boot.surge.sh
